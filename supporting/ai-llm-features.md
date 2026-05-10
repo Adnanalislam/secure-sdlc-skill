@@ -40,7 +40,7 @@
 ### AI / LLM Applications
 
 AI and LLM features introduce a non-deterministic security surface that cannot be formally verified or exhaustively tested. Controls must constrain what the
-model can access, what it can do, and what reaches users;not model behaviour directly. For Optimizely's Opal platform and agent workflows, these controls are foundational to security and customer trust.
+model can access, what it can do, and what reaches users;not model behaviour directly. 
 
 Prompt injection is the primary attack vector. Direct injection comes from user input; indirect injection comes from external content the model processes; documents, web pages, data records. Both must be treated as threats. System prompts must be structurally separated from user input. External content must be treated as untrusted data, not trusted instruction. For agent workflows processing customer-supplied or third-party content, assume that content may attempt to redirect agent actions.
 
@@ -83,7 +83,6 @@ The gateway management plane;configuration, routing rules, model credentials, po
 ---
 
 ## References
-- Optimizely Design-Phase Security Checklist: https://optimizely.atlassian.net/wiki/spaces/SEC/pages/4193452344
 - OWASP LLM Top 10: https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OWASP LLM01 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 - OWASP LLM02 Sensitive Information Disclosure: https://genai.owasp.org/llmrisk/llm02-sensitive-information-disclosure/
