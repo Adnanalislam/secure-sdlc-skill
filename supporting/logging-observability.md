@@ -20,7 +20,7 @@ Logs must be structured rather than free-form strings. Structured logs are searc
 
 Logs must never contain passwords, secrets, tokens, full PII, or any data whose exposure constitutes a security incident. Sensitive data enters logs frequently through request body logging, verbose error capture, or debug output never removed from production. Log access is typically broader than application data access;many identities that cannot access production databases can access logs. User-controlled data written directly into log entries without sanitisation creates log injection risk.User-supplied values must be data within structured fields, not interpolated into messages.
 
-Logs must be written to a destination the application cannot modify or delete. Log streams must be forwarded to a centralised platform;Optimizely uses Datadog mostly where retention, access control, and integrity are managed independently. Not everything should be forwarded at equal volume;debug and verbose operational logs serve development purposes but shipping them at full production volume generates significant ingestion cost without proportionate security value. Security-relevant events must always be forwarded. High-volume operational noise should be filtered or sampled before forwarding.
+Logs must be written to a destination the application cannot modify or delete. Log streams must be forwarded to a centralised platform;companies use Datadog mostly where retention, access control, and integrity are managed independently. Not everything should be forwarded at equal volume;debug and verbose operational logs serve development purposes but shipping them at full production volume generates significant ingestion cost without proportionate security value. Security-relevant events must always be forwarded. High-volume operational noise should be filtered or sampled before forwarding.
 
 Security event logging without alerting provides only reactive value. Critical security events like repeated authentication failures, access denials on sensitive resources, privilege escalation attempts, anomalous patterns must have corresponding alerts. Alert thresholds must be calibrated against normal baseline behaviour to avoid fatigue while ensuring genuine incidents surface.
 
@@ -29,7 +29,6 @@ Log retention must be sufficient to support investigation of late-discovered inc
 ---
 
 ## References
-- Optimizely Design-Phase Security Checklist: https://optimizely.atlassian.net/wiki/spaces/SEC/pages/4193452344
 - OWASP Logging and Monitoring Failures: https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/
 - OWASP Logging Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
 - OWASP Log Injection: https://owasp.org/www-community/attacks/Log_Injection
