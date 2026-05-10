@@ -9,7 +9,7 @@
 
 ## Guidance
 
-The goal is preventing vulnerabilities from reaching pull requests. Optimizely operates SAST, SCA, secret detection, and CSPM tools across the SDLC; findings contribute directly to vulnerability management scores visible to leadership. Addressing root causes here reduces PR-stage findings.
+The goal is preventing vulnerabilities from reaching pull requests.Comapnies operate SAST, SCA, secret detection, and CSPM tools across the SDLC; findings contribute directly to vulnerability management scores visible to leadership. Addressing root causes here reduces PR-stage findings.
 
 Every third-party library must be actively maintained with a responsive security disclosure process and must not be at or approaching end-of-life. Unmaintained libraries accumulate unfixable CVEs;the only remediation is replacement, which is more disruptive the longer it is deferred. For legacy systems carrying EOL dependencies, maintain a tracked inventory and prioritise replacement by severity and exposure.
 
@@ -30,7 +30,6 @@ Platform security controls like HSTS, CSP, and CORS must be correctly configured
 ---
 
 ## References
-- Optimizely Design-Phase Security Checklist: https://optimizely.atlassian.net/wiki/spaces/SEC/pages/4193452344
 - OWASP Vulnerable and Outdated Components: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
 - OWASP Software and Data Integrity Failures: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
 - OWASP HSTS Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
