@@ -28,7 +28,6 @@ Service-to-service calls must enforce authorization;internal network position is
 ---
 
 ## References
-- Optimizely Design-Phase Security Checklist: https://optimizely.atlassian.net/wiki/spaces/SEC/pages/4193452344
 - OWASP Broken Access Control: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
 - OWASP Authorization Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
 - OWASP IDOR: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
