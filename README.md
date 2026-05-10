@@ -1,14 +1,14 @@
-# Optimizely Secure Coding Skill for Claude
+# Secure Coding Skill for Claude
 
 ## What This Is
 
-This is the Optimizely Secure Coding Skill for Claude. It ensures that every piece of code written or reviewed by anyone at Optimizely through Claude meets Optimizely's internal security standards;whether security is explicitly asked about or not.
+This is the Secure Coding Skill for Claude. It ensures that every piece of code written or reviewed by anyone through Claude meets security standards;whether security is explicitly asked about or not.
 
 ---
 
 ## What This Skill Does
 
-Once deployed, this skill activates automatically whenever any persona of Optimizely uses Claude for code generation, code review, feature building, architecture design, code translation, optimisation, refactoring, debugging, or any other interaction where code is written, read, or modified. Security is enforced silently;we receive secure code without needing to ask for it.
+Once deployed, this skill activates automatically whenever any persona uses Claude for code generation, code review, feature building, architecture design, code translation, optimisation, refactoring, debugging, or any other interaction where code is written, read, or modified. Security is enforced silently;we receive secure code without needing to ask for it.
 
 ---
 
@@ -62,7 +62,6 @@ The two components work together. `SKILL.md` without the supporting files gives 
 ## Deployment
 
 All files must be deployed together maintaining the exact directory structure above. `SKILL.md` must remain at the root of the skill directory. All 9 supporting files must remain inside the `supporting/` subfolder. Renaming files or changing the directory structure will break the references in `SKILL.md`.
-This follows the same deployment pattern as the existing Optimizely organisation skills already live in the environment — `optimizely-brand` and `org-structure`.
 
 ## Skill Trigger Configuration
 
@@ -73,8 +72,8 @@ This skill is designed to activate automatically and silently on every relevant 
 For individual developers who want to install the skill directly through the Claude.ai interface without using the command line:
 
 **Step 1 — Download the skill**
-Go to `https://github.com/optimizely/security` and click
-**Code → Download ZIP**. Extract the ZIP. Navigate into `security-main/secure-coding/` and compress just that folder back into a ZIP — this is what you upload to Claude.
+Go to `https://github.com/Adnanalislam/secure-sdlc-skill/` and click
+**Code → Download ZIP**. 
 
 **Step 2 — Open Claude Settings**
 In Claude.ai, click your profile name at the bottom left →
@@ -99,34 +98,34 @@ Make sure the skill trigger is set to **Auto** so it activates silently on every
 ## Claude Code (the CLI) Deployment
 For developers using **Claude Code** (the CLI), the skill is deployed locally rather than through the Claude admin panel. The file structure and content are identical — no changes to any files are needed.
 The source for all files is:
-`https://github.com/optimizely/security/tree/main/secure-coding`
+`https://github.com/Adnanalislam/secure-sdlc-skill/`
 
 ---
 
 **Option A — Global installation (applies to all Claude Code sessions across all projects on the developer's machine):**
 
 **Step 1 — Download the skill files**
-Go to `https://github.com/optimizely/security` and click **Code → Download ZIP**. Extract the ZIP file on your machine. The extracted folder will be named `security-main`. Navigate into `security-main/secure-coding/` — this is the skill folder containing `SKILL.md` and the `supporting/` subfolder.
+Go to `https://github.com/Adnanalislam/secure-sdlc-skill/` and click **Code → Download ZIP**. Extract the ZIP file on your machine. The extracted folder will be named `secure-sdlc-skill-main`. 
 
 **Step 2 — Run these commands**
 ````bash
 # Create the skill root directory
-mkdir -p ~/.claude/skills/secure-coding
+mkdir -p ~/.claude/skills/secure-sdlc-skill
 
 # Place SKILL.md at the skill root — Claude Code discovers it here
-cp ~/Downloads/security-main/secure-coding/SKILL.md ~/.claude/skills/secure-coding/SKILL.md
+cp ~/Downloads/secure-sdlc-skill-main/SKILL.md ~/.claude/skills/secure-sdlc-skill/SKILL.md
 
 # Copy the entire supporting folder with all files
-cp -r ~/Downloads/security-main/secure-coding/supporting ~/.claude/skills/secure-coding/supporting
+cp -r ~/Downloads/secure-sdlc-skill-main/supporting ~/.claude/skills/secure-sdlc-skill/supporting
 ````
-**Note:** The commands above assume you extracted the ZIP to your Downloads folder on macOS — which is the default extraction location. If you extracted to a different location, replace ~/Downloads/security-main/ with your actual extraction path.
+**Note:** The commands above assume you extracted the ZIP to your Downloads folder on macOS — which is the default extraction location. If you extracted to a different location, replace ~/Downloads/secure-sdlc-skill-main/ with your actual extraction path.
 
-**Windows users:** Replace ~/Downloads/security-main/ with
-C:\Users\YourName\Downloads\security-main\ and use PowerShell.
+**Windows users:** Replace ~/Downloads/secure-sdlc-skill-main/ with
+C:\Users\YourName\Downloads\secure-sdlc-skill-main\ and use PowerShell.
 
 After installation the structure will look like this:
 ```
-~/.claude/skills/secure-coding/
+~/.claude/skills/secure-sdlc-skill/
 ├── SKILL.md                    ← must be here at root
 └── supporting/
     ├── authentication-identity.md
@@ -143,7 +142,7 @@ After installation the structure will look like this:
 **Option B — Project-level installation (applies to one project only and can be committed to version control for the whole team):**
 
 **Step 1 — Download the skill files**
-Go to `https://github.com/optimizely/security` and click **Code → Download ZIP**. Extract the ZIP file on your machine. The extracted folder will be named `security-main`. Navigate into `security-main/secure-coding/` — this is the skill folder containing `SKILL.md` and the `supporting/` subfolder.
+Go to `https://github.com/Adnanalislam/secure-sdlc-skill/` and click **Code → Download ZIP**. Extract the ZIP file on your machine. The extracted folder will be named `secure-sdlc-skill-main`. 
 
 **Step 2 — Run these commands**
 ```bash
@@ -151,25 +150,25 @@ Go to `https://github.com/optimizely/security` and click **Code → Download ZIP
 cd /path/to/your/project
 
 # Create the skill root directory
-mkdir -p .claude/skills/secure-coding
+mkdir -p .claude/skills/secure-sdlc-skill
 
 # Place SKILL.md at the skill root — Claude Code discovers it here
-cp ~/Downloads/security-main/secure-coding/SKILL.md .claude/skills/secure-coding/SKILL.md
+cp ~/Downloads/secure-sdlc-skill-main/SKILL.md .claude/skills/secure-sdlc-skill/SKILL.md
 
 # Copy the entire supporting folder with all files
-cp -r ~/Downloads/security-main/secure-coding/supporting .claude/skills/secure-coding/supporting
+cp -r ~/Downloads/secure-sdlc-skill-main/supporting .claude/skills/secure-sdlc-skill/supporting
 ```
-**Note:** The commands above assume you extracted the ZIP to your Downloads folder on macOS — which is the default extraction location. If you extracted to a different location replace ~/Downloads/security-main/ with your actual extraction path.
+**Note:** The commands above assume you extracted the ZIP to your Downloads folder on macOS — which is the default extraction location. If you extracted to a different location replace ~/Downloads/secure-sdlc-skill-main/ with your actual extraction path.
 
-**Windows users:** Replace ~/Downloads/security-main/ with
-C:\Users\YourName\Downloads\security-main\ and use PowerShell.
+**Windows users:** Replace ~/Downloads/secure-sdlc-skill-main/ with
+C:\Users\YourName\Downloads\secure-sdlc-skill-main\ and use PowerShell.
 After installation the structure will look like this
 
 ```
 your-project/
 └── .claude/
     └── skills/
-        └── secure-coding/
+        └── secure-sdlc-skill/
             ├── SKILL.md                    ← must be here at root
             └── supporting/
                 ├── authentication-identity.md
