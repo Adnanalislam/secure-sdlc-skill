@@ -49,7 +49,7 @@ secure-sdlc-skill/
 Two commands. That is it.
 
 ```bash
-/plugin marketplace add https://github.com/optimizely/secure-sdlc-skill
+/plugin marketplace add https://github.com/Adnanalislam/secure-sdlc-skill
 /plugin install opti-security@opti-security
 /reload-plugins
 ```
