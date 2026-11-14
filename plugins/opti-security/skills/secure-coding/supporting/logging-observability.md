@@ -29,7 +29,6 @@ Log retention must be sufficient to support investigation of late-discovered inc
 ---
 
 ## References
-- Optimizely Design-Phase Security Checklist: https://optimizely.atlassian.net/wiki/spaces/SEC/pages/4193452344
 - OWASP Logging and Monitoring Failures: https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/
 - OWASP Logging Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
 - OWASP Log Injection: https://owasp.org/www-community/attacks/Log_Injection
