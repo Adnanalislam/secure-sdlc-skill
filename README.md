@@ -1,8 +1,8 @@
-# Optimizely Security Skills for Claude
+# Code Security Skills for Claude
 
 ## What This Is
 
-This is the Optimizely Security Skills marketplace for Claude Code. It provides security-focused skills built and maintained by the Optimizely Product Security team — ensuring that every piece of code written or reviewed through Claude meets Optimizely's internal security standards,OWASP standards whether security is explicitly asked about or not.
+This is the Code Security Skills marketplace for Claude Code. It provides security-focused skills built and maintained by the Product Security Professional ensuring that every piece of code written or reviewed through Claude meets internal security standards,OWASP standards whether security is explicitly asked about or not.
 
 ---
 
@@ -10,7 +10,7 @@ This is the Optimizely Security Skills marketplace for Claude Code. It provides 
 
 | Skill | Description |
 |---|---|
-| `secure-coding` | Enforces Optimizely security standards silently across all code generation, review, refactoring, and debugging workflows |
+| `secure-coding` | Enforces security standards silently across all code generation, review, refactoring, and debugging workflows |
 
 More skills will be added here as the security programme expands.
 
@@ -49,7 +49,7 @@ secure-sdlc-skill/
 Two commands. That is it.
 
 ```bash
-/plugin marketplace add https://github.com/Adnanalislam/secure-sdlc-skill
+/plugin marketplace add https://github.com/Adnanalislam/secure-sdlc-skill/
 /plugin install opti-security@opti-security
 /reload-plugins
 ```
@@ -111,7 +111,7 @@ Install once via the marketplace — the skill then applies automatically across
 Commit the skill directly into your product repository. Every contributor who clones the repo gets the skill automatically without any manual installation steps.
 
 **Step 1 — Download the skill files**
-Go to `https://github.com/optimizely/secure-sdlc-skill` → **Code → Download ZIP**.
+Go to `https://github.com/Adnanalislam/secure-sdlc-skill/` → **Code → Download ZIP**.
 Extract the ZIP on your machine.
 
 **Step 2 — Copy the skill into your product repo**
@@ -134,7 +134,7 @@ cp -r ~/Downloads/secure-sdlc-skill-main/plugins/opti-security/skills/secure-cod
 
 ```bash
 git add .claude/
-git commit -m "chore: add Optimizely secure-coding skill for Claude Code"
+git commit -m "chore: add secure-coding skill for Claude Code"
 git push origin main
 ```
 **Windows users:** Replace `~/Downloads/secure-sdlc-skill-main/` with `C:\Users\YourName\Downloads\secure-sdlc-skill-main\` and use PowerShell.
@@ -163,7 +163,7 @@ git push origin main
 For individuals who prefer the Claude.ai web interface over Claude Code:
 
 **Step 1 — Download**
-Go to `https://github.com/optimizely/secure-sdlc-skill` → **Code → Download ZIP**.
+Go to `https://github.com/Adnanalislam/secure-sdlc-skill/` → **Code → Download ZIP**.
 Extract the ZIP. Navigate into
 `secure-sdlc-skill-main/plugins/opti-security/skills/secure-coding/`
 and compress just that folder into a new ZIP — this is what you upload to Claude.
@@ -184,7 +184,7 @@ If you prefer to install without the marketplace, use this method instead:
 **macOS — Global installation:**
 
 ```bash
-# Download and extract the ZIP from https://github.com/optimizely/secure-sdlc-skill
+# Download and extract the ZIP from https://github.com/Adnanalislam/secure-sdlc-skill/
 # then run:
 
 mkdir -p ~/.claude/skills/secure-coding
@@ -239,5 +239,4 @@ handles everything.
 ---
 
 ## Maintained By
-
-Optimizely Product Security Team — `product.security@optimizely.com`
+Product Security 
